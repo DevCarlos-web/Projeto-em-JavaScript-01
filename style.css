@@ -39,6 +39,7 @@ nav {
     cursor: pointer;
     transition: transform 0.3s ease;
 }
+
 .logo-img:hover {
     transform: scale(1.1);
 }
@@ -51,8 +52,9 @@ nav {
     color: #1c1d57;
     transition: transform 0.3s ease;
 }
+
 .menu-nav:hover {
-    color: #1e7ea8 ;
+    color: #1e7ea8;
     transition: 0.3s;
     transform: scale(1.1);
 }
@@ -66,7 +68,7 @@ nav {
 }
 
 .search-div {
-  
+
     width: 20vw;
     display: flex;
     align-items: center;
@@ -79,3 +81,35 @@ nav {
 }
 
 /* Main Styles */
+
+main {
+    width: 100vw;
+    min-height: 100vh;
+    background-color: #5f5b5b;
+}
+
+.calc {
+    width: 1000px;
+    height: 500px;
+    background-color: #fff;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.calculator,
+.results {
+    width: 45%;
+    height: 80%;
+    display: flex;
+    background-color: #1e7fa83a;
+    display: inline-block;
+    transform: translate(7%, 12%);
+    margin-top: 10px;
+    border-radius: 10px;
+    box-shadow:#1c1d57 0px 3px 8px;
+    margin: 0 10px;
+}
