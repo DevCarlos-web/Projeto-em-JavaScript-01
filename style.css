@@ -35,20 +35,26 @@ nav {
     width: 20vw;
 }
 
-.logo-div img {
+.logo-img {
     cursor: pointer;
+    transition: transform 0.3s ease;
+}
+.logo-img:hover {
+    transform: scale(1.1);
 }
 
 .menu-nav {
     font-size: 25px;
     font-weight: 600;
     text-decoration: none;
-    margin: 0 40px;
+    margin: 0 30px;
     color: #1c1d57;
+    transition: transform 0.3s ease;
 }
 .menu-nav:hover {
     color: #1e7ea8 ;
     transition: 0.3s;
+    transform: scale(1.1);
 }
 
 .input-search {
@@ -56,7 +62,7 @@ nav {
     height: 40px;
     border-radius: 20px;
     border: 1px solid #ccc;
-    cursor: pointer;  
+    cursor: pointer;
 }
 
 .search-div {
