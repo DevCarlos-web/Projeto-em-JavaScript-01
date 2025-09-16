@@ -156,6 +156,7 @@ main {
     margin-bottom: 10px;
 }
 
+
 .calculator select {
     width: 70%;
     height: 40px;
@@ -188,8 +189,33 @@ main {
     appearance: none;
 }
 
+/*results*/
 
+.results {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    
+    
+}
+.results .flag {
+    width: 70px;
+    height: auto;
+}
 
+.flag {
+    margin: 0;
+    padding: 0;
+}
+.results p {
+    font-size: 20px;
+    font-weight: 600;
+    color: #1c1d57;
+    margin-bottom: 1px;
+}
+ 
 
 /* social media */
 
