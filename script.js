@@ -32,9 +32,22 @@ function convertValues() {
     }).format(inputCurrencyValue)
 
 }
-
+/*Seletores*/
 function changeCurrency() {
-    const currencyName
+    const currencyName = document.getElementById('currency-name')
+    const currencyImg = document.querySelector('#currency-img')
+
+    if (currencySelect.value == "dolar"){
+        currencyName.innerHTML = 'Dólar americano'
+        currencyImg.src = './Img/USA.png'
+    }
+
+     if (currencySelect.value == "euro"){
+        currencyName.innerHTML = 'Euro'
+        currencyImg.src = './Img/euro.png'
+    }
+
+    convertValues()
 }
 
 currencySelect.addEventListener('change', changeCurrency)
