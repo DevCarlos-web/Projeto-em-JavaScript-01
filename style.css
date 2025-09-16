@@ -121,7 +121,7 @@ main {
 }
 
 .convert-button {
-    width: 150px;
+    width: 120px;
     height: 35px;
     border-radius: 20px;
     border: none;
@@ -131,7 +131,7 @@ main {
     cursor: pointer;
     transition: transform 0.3s ease;
     position: absolute;
-    margin-top: 413px;
+   
 }
 
 .convert-button:hover {
