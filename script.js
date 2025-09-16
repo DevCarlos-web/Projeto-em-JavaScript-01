@@ -9,8 +9,8 @@ function convertValues() {
 
     console.log(currencySelect.value)
 
-    const dolarToday = 5.2
-    const euroToday = 6.2
+    const dolarToday = 5.30
+    const euroToday = 6.29
 
     if (currencySelect.value == "dolar") {
         currencyValueConvert.innerHTML = new Intl.NumberFormat("en-US", {
