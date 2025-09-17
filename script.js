@@ -266,3 +266,4 @@ currencySelect.addEventListener('change', changeCurrencyTo)
 currencySelectFrom.addEventListener('change', changeCurrencyFrom)
 convertButton.addEventListener("click", convertValues)
 
+// barra de pesquisa
