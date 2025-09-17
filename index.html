@@ -32,22 +32,27 @@
 
             <div class="calculator">
                 <P>Convert from</P>
-                <select name="real" id="real" class="select">
-                    <option value="real">R$ Brazilian Real</option>
-                </select>
-                <P>To</P>
-                <select name="to" id="to" class="select-to select">
+                <select name="real" id="real" class="select select-from">
+                    <option value="real">R$ Real</option>
                     <option value="dolar">US$ US dollar</option>
                     <option value="euro">€ Euro</option>
+                    <option value="libra">£ Libra</option>
+                </select>
+                <P>To</P>
+                <select name="to" class="select select-to">
+                    <option value="dolar">US$ US dollar</option>
+                    <option value="euro">€ Euro</option>
+                    <option value="libra">£ Libra</option>
+                    <option value="real">R$ Real</option>    
                 </select>
                 <p>Value</p>
                 <input type="number" placeholder="1.500,00" class="input-value">
             </div>
 
             <div class="results">
-                <img src="./Img/Brazil.png" alt="Brazilian flag" class="flag">
-                <p class="currency">Real</p>
-                <p class="currency-value-to-convert">R$ 0,00</p>
+                <img src="./Img/Brazil.png" alt="Brazilian flag" class="flag" id="currency-img-from">
+                <p class="currency" id="currency-name-from">Real</p>
+                <p class="currency-value-from-convert">R$ 0,00</p>
 
                 <img src="./Img/down-chevron.png" alt="blue chevron arrow pointing" class="arrow-down">
 
