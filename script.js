@@ -14,6 +14,7 @@ function convertValues() {
     const libraToday = 7.3
     const realToday = 1
 
+    // Bloco 1: Se a moeda de origem for Real    
     if (currencySelectFrom.value == "real") {
 
         if (currencySelect.value == "dolar") {
@@ -47,7 +48,7 @@ function convertValues() {
 
     }
 
-
+    // Bloco 2: Se a moeda de origem for Dólar
     if (currencySelectFrom.value == "dolar") {
 
         if (currencySelect.value == "real") {
@@ -71,7 +72,7 @@ function convertValues() {
             }).format(inputCurrencyValue / libraToday)
         }
 
-         if (currencySelect.value == "dolar") {
+        if (currencySelect.value == "dolar") {
             currencyValueConvert.innerHTML = new Intl.NumberFormat("en-US", {
                 style: "currency",
                 currency: "USD"
@@ -79,7 +80,7 @@ function convertValues() {
 
         }
     }
-
+    // Bloco 3: Se a moeda de origem for Euro
     if (currencySelectFrom.value == "euro") {
 
         if (currencySelect.value == "real") {
@@ -110,7 +111,7 @@ function convertValues() {
             }).format(inputCurrencyValue)
         }
     }
-
+    // Bloco 4: Se a moeda de origem for Libra
     if (currencySelectFrom.value == "libra") {
 
         if (currencySelect.value == "real") {
@@ -143,7 +144,7 @@ function convertValues() {
     }
 
 
-
+    // Atualiza o valor de entrada para o formato da moeda de origem.
     if (currencySelect.value == "real") {
 
         if (currencySelectFrom.value == "dolar") {
@@ -165,10 +166,10 @@ function convertValues() {
                 style: "currency",
                 currency: "BRL"
             }).format(inputCurrencyValue * libraToday)
-        }   
+        }
     }
 
-    // Formata o valor de From //
+    // Este bloco formata o valor digitado pelo usuário e exibe-o no formato da moeda de origem.
 
     if (currencySelectFrom.value == "dolar") {
         currencyValueFromConvert.innerHTML = new Intl.NumberFormat("en-US", {
@@ -201,7 +202,8 @@ function convertValues() {
 
 }
 
-/* img */
+// Esta função é chamada para atualizar a imagem e o nome da moeda de destino.
+
 function changeCurrencyTo() {
     const currencyName = document.getElementById('currency-name')
     const currencyImg = document.querySelector('#currency-img')
@@ -259,9 +261,6 @@ function changeCurrencyFrom() {
 
     convertValues()
 }
-
-
-
 
 currencySelect.addEventListener('change', changeCurrencyTo)
 currencySelectFrom.addEventListener('change', changeCurrencyFrom)
